@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Trade Stocks</h1>
+    <form action="{{ url_for('main.trade') }}" method="post">
+        <input type="text" name="stock_symbol" placeholder="Stock Symbol">
+        <input type="number" name="quantity" placeholder="Quantity">
+        <button type="submit">Trade</button>
+    </form>
+</body>
+</html>
